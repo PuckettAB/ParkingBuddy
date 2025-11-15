@@ -1,0 +1,29 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.yourco.parking",
+  "teamIdentifier": "ABCDE12345",
+  "organizationName": "YourCo",
+  "description": "Parking Helper",
+  "serialNumber": "SERIAL-WILL-BE-OVERRIDDEN",
+  "logoText": "Parking Helper",
+  "backgroundColor": "rgb(0,0,0)",
+  "foregroundColor": "rgb(255,255,255)",
+  "labelColor": "rgb(200,200,200)",
+  "generic": {
+    "primaryFields": [
+      {"key":"floor","label":"Floor","value":"4"}
+    ],
+    "secondaryFields": [
+      {"key":"stair","label":"Stair/Elevator","value":"A"},
+      {"key":"garage","label":"Garage","value":"G1"}
+    ]
+  },
+  "locations": [
+    {"latitude": 40.4417, "longitude": -79.9901, "relevantText":"Near your garage"}
+  ],
+  "beacons": [
+    {"proximityUUID":"00000000-0000-0000-0000-000000000001","major":1,"minor":1,"relevantText":"Garage entrance"}
+  ],
+  "webServiceURL": "https://YOURDOMAIN.com/applepass",
+  "authenticationToken": "TOKEN-WILL-BE-OVERRIDDEN"
+}
