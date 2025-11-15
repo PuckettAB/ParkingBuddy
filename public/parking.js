@@ -1,5 +1,9 @@
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js");
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(err => {
+      console.error("SW registration failed:", err);
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
