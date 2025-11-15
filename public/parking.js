@@ -1,6 +1,6 @@
-/* if ("serviceWorker" in navigator) {
+if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/sw.js");
-} */
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   function parseParams() {
